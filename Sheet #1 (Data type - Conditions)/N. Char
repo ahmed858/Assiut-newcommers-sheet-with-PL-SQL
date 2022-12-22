@@ -1,0 +1,31 @@
+/*
+Given a letter X. If the letter is lowercase print the letter after converting it from lowercase letter to uppercase letter. Otherwise print the letter after converting it from uppercase letter to lowercase letter
+Note : difference between 'a' and 'A' in ASCII is 32 .
+
+*/
+  
+declare
+cc char ;
+
+
+
+begin
+  cc:='&cc';
+  
+  if ascii('a') <= ascii(cc)and ascii(cc) <= ascii('z')then 
+    dbms_output.put_line(UPPER(cc));
+  else
+    dbms_output.put_line(UPPER(cc));
+  end if;
+
+
+end;
+/*
+a
+
+->A
+
+
+*/
+
+
