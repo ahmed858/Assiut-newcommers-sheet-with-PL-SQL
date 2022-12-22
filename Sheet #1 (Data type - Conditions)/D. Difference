@@ -1,11 +1,18 @@
+
+/*
+Given four numbers A, B, C and D. Print the result of the following equation :
+
+ X = (A * B) - (C * D).
+ */
+ 
 declare
-aa integer;
-bb integer;
-cc integer;
-dd integer;
-x integer ;
-y integer;
-temp integer;
+aa number;
+bb number;
+cc number;
+dd number;
+x number ;
+y number;
+temp number;
 
 
 
@@ -16,8 +23,8 @@ bb :='&bb';
 cc :='&cc';
 dd :='&dd';
 x := aa * bb;
-y :=  cc * dd;
-temp := x - y ;
+y := cc * dd;
+temp :=x - y ;
 
 dbms_output.put_line('Difference = '||temp);
 end;
