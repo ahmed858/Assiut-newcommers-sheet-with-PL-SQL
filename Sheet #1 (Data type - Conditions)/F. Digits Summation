@@ -1,0 +1,22 @@
+/*Given two numbers N and M. Print the summation of their last digits.*/
+declare
+n number;
+m number;
+ans number;
+
+begin
+n := '&n';
+m := '&m';
+n:=mod(n,10);
+m:=mod(m,10);
+ans:= n+m;
+dbms_output.put_line(ans);
+end;
+
+
+/*
+-- input: 12 13
+-- output: 5
+*/
+
+
