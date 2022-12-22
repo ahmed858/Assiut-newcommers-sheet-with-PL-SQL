@@ -1,0 +1,24 @@
+/*Given a number N. Print the summation of the numbers that is between 1 and N (inclusive).
+
+.∑i=1Ni
+*/
+  
+declare
+n number;
+m number;
+ans number;
+
+begin
+n := '&n';
+
+ans:= (n+1)*n/2;
+dbms_output.put_line(ans);
+end;
+
+
+/*
+-- input: 5
+-- output: 15
+*/
+
+
