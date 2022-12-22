@@ -1,0 +1,23 @@
+declare
+x pls_integer;
+y number;
+cc char;
+f number;
+d number;
+
+begin
+x:='&x';
+y:='&y';
+cc:= '&cc';
+f:='&f';
+d:='&d';
+dbms_output.put_line(x);
+dbms_output.put_line(y);
+dbms_output.put_line(cc);
+dbms_output.put_line(f);
+dbms_output.put_line(d);
+
+end;
+-- 3 12345678912345 a 334.23 14049.30493
+
+
