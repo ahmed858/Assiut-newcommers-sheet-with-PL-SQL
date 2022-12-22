@@ -1,0 +1,10 @@
+declare
+v_str clob ;
+
+begin
+
+v_str:='&v_str' ;
+dbms_output.put_line('Hello, '||v_str);
+
+end;
+
