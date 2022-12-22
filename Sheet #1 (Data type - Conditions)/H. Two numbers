@@ -1,0 +1,32 @@
+/*
+Given 2 numbers A and B. Print floor, ceil and round of A/B
+*/
+  
+declare
+n number;
+m number;
+ans number;
+
+begin
+n := '&n';
+m := '&m';
+
+ans:=floor( n/m);
+dbms_output.put_line('floor '||n||' / '||m||' = '||ans);
+ans:=ceil( n/m);
+dbms_output.put_line('ceil '||n||' / '||m||' = '||ans);
+ans:=round( n/m);
+dbms_output.put_line('round '||n||' / '||m||' = '||ans);
+end;
+
+
+/*
+-- input:
+10 3
+-- output:
+floor 10 / 3 = 3
+ceil 10 / 3 = 4
+round 10 / 3 = 3
+*/
+
+
