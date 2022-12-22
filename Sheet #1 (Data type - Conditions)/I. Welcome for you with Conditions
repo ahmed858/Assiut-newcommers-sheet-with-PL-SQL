@@ -1,0 +1,27 @@
+/*
+Given two numbers A and B. Print "Yes" if A is greater than or equal to B. Otherwise print "No".
+*/
+  
+declare
+n number;
+m number;
+ans number;
+
+begin
+  n := '&n';
+  m := '&m';
+  
+  if n>= m then dbms_output.put_line('Yes');
+  else dbms_output.put_line('No');
+  end if;
+end;
+
+
+/*
+-- input:
+10 9
+-- output:
+Yes
+*/
+
+
