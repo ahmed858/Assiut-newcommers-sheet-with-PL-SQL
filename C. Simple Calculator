@@ -1,0 +1,24 @@
+declare
+x number;
+y number;
+temp number;
+begin
+x:='&x';
+y:='&y';
+temp:=x+y;
+dbms_output.put_line(x||' + '||y||' = '||temp);
+temp  :=x*y;
+dbms_output.put_line(x||' * '||y||' = '||temp);
+temp  :=x-y;
+dbms_output.put_line(x||' - '||y||' = '||temp);
+
+end;
+
+-- input: 5 10
+/*
+5 + 10 = 15
+5 * 10 = 50
+5 - 10 = -5
+*/
+
+
