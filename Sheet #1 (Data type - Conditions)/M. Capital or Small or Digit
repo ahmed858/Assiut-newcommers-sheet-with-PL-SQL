@@ -1,0 +1,42 @@
+/*
+Given a letter X. Determine whether X is Digit or Alphabet and if it is Alphabet determine if it is Capital Case or Small Case.
+
+Input
+*/
+  
+declare
+cc char ;
+
+
+
+begin
+  cc:='&cc';
+  
+  if ascii('a') <= ascii(cc)and ascii(cc) <= ascii('z')then 
+    dbms_output.put_line('ALPHA');
+    dbms_output.put_line('IS SMALL');
+    return;
+    
+  end if;
+    
+  if ascii ('A') <= ascii(cc) and ascii(cc)<= ascii ('Z')then 
+    dbms_output.put_line('ALPHA');
+    dbms_output.put_line('IS CAPITAL');
+    return;
+  end if;
+   
+  dbms_output.put_line('IS DIGIT');
+  
+    
+  
+  
+end;
+/*
+6
+
+IS DIGIT
+
+
+*/
+
+
