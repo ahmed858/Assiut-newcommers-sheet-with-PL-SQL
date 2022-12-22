@@ -1,0 +1,30 @@
+declare
+aa integer;
+bb integer;
+cc integer;
+dd integer;
+x integer ;
+y integer;
+temp integer;
+
+
+
+begin
+
+aa :='&aa';
+bb :='&bb';
+cc :='&cc';
+dd :='&dd';
+x := aa * bb;
+y :=  cc * dd;
+temp := x - y ;
+
+dbms_output.put_line('Difference = '||temp);
+end;
+-- input: 1 2 3 4
+
+/*
+Difference = -10
+*/
+
+
