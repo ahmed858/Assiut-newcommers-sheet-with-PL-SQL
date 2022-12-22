@@ -1,0 +1,26 @@
+
+/*
+Given four numbers A, B, C and D. Print the result of the following equation :
+
+ X = (A * B) - (C * D).
+ */
+ 
+declare
+R number;
+pi constant number default 3.141592653;
+
+ans number;
+
+begin
+R:= '&R';
+ans := pi*R*R;
+dbms_output.put_line(ans);
+end;
+
+
+/*
+-- input: 2.00
+-- output: 12.566370612
+*/
+
+
