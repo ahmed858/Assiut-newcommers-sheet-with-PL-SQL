@@ -1,0 +1,54 @@
+/*
+Given two numbers A and B. Print "Multiples" if A is multiple of B or vice versa. Otherwise print "No Multiples".
+
+Input
+*/
+  
+declare
+x number;
+y number;
+z number;
+
+begin
+  x:= '&x';
+  y:= '&y';
+  z:= '&z';
+  
+  if x <= y and x <= z then 
+    dbms_output.put_line(x);
+    if y < z then 
+      dbms_output.put_line(z);
+    else 
+      dbms_output.put_line(y);
+    end if;
+    
+  end if;
+  if (y <= x and y <= z) then 
+      dbms_output.put_line(y);
+      if x < z then
+        dbms_output.put_line(z);
+      else 
+        dbms_output.put_line(x);
+      end if;
+  end if;
+  
+  if (z <= y and z <= x) then 
+      dbms_output.put_line(z);
+      if x < y then
+        dbms_output.put_line(y);
+      else 
+        dbms_output.put_line(x);
+      end if;
+  end if;
+  
+end;
+/*
+-- input:
+1 2 3
+-- output:
+1
+2
+
+*/
+
+
