@@ -1,0 +1,29 @@
+/*
+Given two numbers A and B. Print "Multiples" if A is multiple of B or vice versa. Otherwise print "No Multiples".
+
+Input
+*/
+  
+declare
+n number;
+m number;
+ans number;
+
+begin
+  n := '&n';
+  m := '&m';
+  
+  if mod(n,m)=0 or mod(m,n)=0 then dbms_output.put_line('Multiples');
+  else dbms_output.put_line('No Multiples');
+  end if;
+end;
+
+
+/*
+-- input:
+10 5
+-- output:
+Multiples
+*/
+
+
