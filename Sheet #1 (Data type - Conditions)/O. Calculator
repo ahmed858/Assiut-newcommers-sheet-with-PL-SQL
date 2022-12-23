@@ -1,0 +1,35 @@
+
+declare 
+s clob ; 
+n number; 
+m number; 
+begin 
+  s:='&s'; 
+   
+
+  if substr(s, instr(s,'*',1)) is not null then  
+    n := to_number( substr(s,1, instr(s,'*',1)-1 )) ; 
+    m := to_number( substr(s, instr(s,'*',1)+1 )) ; 
+    dbms_output.put_line(n*m); 
+  end if;
+  
+   if substr(s, instr(s,'+',1)) is not null then  
+    n := to_number( substr(s,1, instr(s,'+',1)-1 )) ; 
+    m := to_number( substr(s, instr(s,'+',1)+1 )) ; 
+    dbms_output.put_line(n+m); 
+  end if;
+  if substr(s, instr(s,'-',1)) is not null then  
+    n := to_number( substr(s, 1, instr(s,'-',1)-1 )) ; 
+    m := to_number( substr(s, instr(s,'-',1)+1 )) ; 
+    dbms_output.put_line(n-m);
+  end if;
+  
+  if substr(s, instr(s,'/',1)) is not null then  
+    n := to_number( substr(s,1, instr(s,'/',1)-1 )) ; 
+    m := to_number( substr(s, instr(s,'/',1)+1 )) ; 
+    dbms_output.put_line(n/m); 
+  end if;
+ 
+
+  
+end;
