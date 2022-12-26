@@ -1,0 +1,28 @@
+/*
+Given a Number N corresponding to a person's age (in days). Print his age in years, months and days, followed by its respective message "years", "months", "days".
+
+Note: consider the whole year has 365 days and 30 days per month.
+*/
+  
+declare
+
+s clob;
+num float;
+x  float;
+begin
+  s :='&s';
+  
+  num := to_number (s);
+
+  x := to_number (substr(s,1,instr(s,'.',1)-1));
+  
+  
+  if (num-x) = 0 then
+    dbms_output.put_line('int '||x);
+  else 
+    dbms_output.put_line('float  '|| x ||' '|| to_number(substr(s,instr(s,'.',1))));
+  end if;
+  
+end;
+
+
