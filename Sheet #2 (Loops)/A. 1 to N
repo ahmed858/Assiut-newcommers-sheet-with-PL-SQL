@@ -1,0 +1,16 @@
+/*
+Given a number N. Print numbers from 1 to N in separate lines.
+*/
+  
+declare
+n int;
+begin
+ n:= '&n';
+ 
+ for i in 1..n loop
+ dbms_output.put_line(i);
+ end loop;
+  
+end;
+
+
